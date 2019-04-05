@@ -2,7 +2,7 @@ import os
 import sys
 
 config_path = os.path.join(os.getenv("HOME"), ".jupyter/jupyter_notebook_config.py")
-template_path = os.path.join(os.getcwd(), 'config/')
+template_path = os.path.join(os.getcwd(), 'config/templates/')
 
 with open(config_path, 'a') as file:
     file.write("c.JupyterLabTemplates.include_default = False\n")
